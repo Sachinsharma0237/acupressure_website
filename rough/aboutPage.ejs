@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<h1  
+style="font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;  color:red;display: flex;justify-content: center;">Who We Are?</h1>
+
+<div style="background-color:#F7F8F9; width: 95%; position: relative; margin: auto; font-size: 20px;">
+  <p> The journey of a thousand miles begins with a single step. And so has the journey of Ved Acupressure.</p>
+  <p> The Institute was formed by Sunil Kumar  , who is a leading Acupressure Therapist having a large chain of satisfied clients and students across the nation. His journey started with self-realization and he has since then been working to help each and everyone around with a thought to realize the self and also uncover the hidden truth.</p>
+  <p> He has been for long working to spread the knowledge of Acupressure, Magnet Therapy, Acupuncture, Naruropathy and much more. In the process of spreading the knowledge, he has been associated with multiple institutes within and outside Delhi. </p>
+  <p> 
+    A visionary by nature and a student with thought, he firmly believes that we have the power to attain anything in the world and get 
+    whatever we wish to, and our planetary positions act as a catalyst in achieving these. A Slight bit of correction and remedies could 
+    help us be better prepared to handle any adverse situation, and lead a successful life.
+    For his precious contribution to society, Sunil Kumar has been honored with many prestigious awards by different organizations. </p>
+  <p> 
+    His aim in life is to spread the knowledge of Ancient Indian Holistic Approach. And this is the aim that motivated him to set up the Acu-Arogyam . An Institute that not just spreads the knowledge to perform better in life, but also works to hone the skill set of its students by providing them lifelong support. </p>
+  <p>
+    Ved-Acupressure is an Institute that supports learning and with this thought, Bipien Singh extends his support to society too. Acu-arogyam pledges to support all who cannot afford to pay the curriculum fees by teaching them.
+    A step that is being taken to ensure that our learning from the Vedic Approach covers all the sections of society and doesn’t differ in spreading its knowledge.
+  </p>
+
+</div>
+<br>
+<h2  
+style="font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;display: flex;justify-content: center; text-decoration: overline;">OUR TEAM</h2>
+
+<div class="row" style="margin-right: 8px; margin-left: 8px;">
+  <div class="column">
+    <div class="card">
+      <img src="https://machinelearningmastery.com/wp-content/uploads/2017/01/A-Gentle-Introduction-to-the-Random-Walk-for-Times-Series-Forecasting-with-Python.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://machinelearningmastery.com/wp-content/uploads/2017/01/A-Gentle-Introduction-to-the-Random-Walk-for-Times-Series-Forecasting-with-Python.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://daniel.haxx.se/blog/wp-content/uploads/2018/06/dogs-2195708_640-640x372.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <%- include('../views/components/footer.ejs'); %>
+</footer>
+</body>
+</html>
